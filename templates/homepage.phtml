@@ -32,7 +32,7 @@ $upcomingChampGameIfHomeTeamWins = $this->get('upcomingChampGameIfHomeTeamWins')
 $upcomingChampGameIfAwayTeamWins = $this->get('upcomingChampGameIfAwayTeamWins');
 
 /** @var bool $isOngoingSeason */
-$isOngoingSeason   = $this->get('isOngoingSeason'); 
+$isOngoingSeason   = $this->get('isOngoingSeason');
 
 /**
  * @param Team $team
@@ -40,6 +40,14 @@ $isOngoingSeason   = $this->get('isOngoingSeason');
  */
 function getTeamLogoURL(Team $team) {
     return '/img/teams/' . $team->getID() . '.gif';
+}
+
+/**
+* @param Team $team
+* @return string
+ */
+function getTeamLogoLargeURL(Team $team) {
+    return 'img/teams-large/' . $team->getID() . '.png';
 }
 
 /**
@@ -52,8 +60,12 @@ function getTeamLogoImgTag(Team $team) {
 
 /**
  * @param Team $team
- * @return string
+ * @return String
  */
+function getTeamStadiumBg(Team $team) {
+    return 'background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3)), url('. "'" . "/img/stadiums/" . $team->getID() . ".jpg');";
+}
+
 function getTeamSignature(Team $team) {
     return sprintf(
         '<img src="%s" alt="%s" title="%s"> <span title="%s">%s</span>',
@@ -74,200 +86,140 @@ function getSeasonName($season) {
     if ($season === 'all') {
         return 'All-Time';
     }
-    return $season . '/' . substr($season + 1, 2);
+    return $season . '-<span class="second-year">' . substr($season + 1, 2) . "</span>";
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>NBA Championship Belt <?= getSeasonName($this->get('season')); ?></title>
-        <link rel="shortcut icon" href="/favicon.ico">
-        <style>
-            * { margin: 0; padding: 0; }
-            html, body { width: 100%; height: 100%; }
-            
-            body {
-                font-family: Arial, sans-serif;
-                font-size: 12px;
-            }
-            
-            #container {
-                margin: 20px;
-            }
-            
-            #logo {
-                width: 300px;
-                height: 202px;
-                margin-bottom: 40px;
-                background: url(/img/logo.png) no-repeat;
-            }
-            
-            h1 { font-weight: normal; font-size: 38px; margin: 50px 0 5px 0; }
-            h2 { font-weight: normal; font-size: 16px; margin: 16px 0 8px 0; text-transform: uppercase; }
-            
-            li { margin-left: 20px; }
-            a { color: #333; }
-            
-            .champs p img { vertical-align: middle; }
-            .champs p { line-height: 24px; }
-            
-            .seasons { margin: 0 0 20px 0; max-width: 400px; }
-            .title-winner { font-size: 32px; }
-            
-            .next-battle { margin: 30px 0; text-align: center; }
-            .next-battle .matchup { font-size: 32px; margin-bottom: 8px; }
-            .next-battle .matchup img { vertical-align: baseline; }
-            .next-battle .date { font-size: 16px; }
-            
-            .next-battles-after-team-win { text-align: center; margin: 20px 10px; }
-            .next-battle-after-team-win {
-                display: inline-block;
-                padding: 10px;
-                margin: 0 5px;
-                background-color: #f5f5f5;
-                border-radius: 4px;
-            }
-            .next-battle-after-team-win .matchup { font-size: 16px; margin-bottom: 4px; }
-            .next-battle-after-team-win .matchup img { vertical-align: top; }
-            .next-battle-after-team-win .date { font-size: 10px; }
-            .next-battle-after-away-team-win {  }
-            
-            table { border-collapse: collapse; }
-            th, td { border: 1px solid #666; padding: 2px 4px; text-align: left; }
-            th { background-color: #777; color: #fff; }
-            th[colspan] { text-align: center; }
-            td img { vertical-align: middle; }
-            tr { background-color: #fff; }
-            tr:nth-child(even) { background-color: #f5f5f5; }
-            th.numeric, td.numeric { text-align: center; }
-            
-            .row   { float: left; margin: 0 50px 20px 0; }
-            .clear { clear: left; }
-        </style>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            
-            ga('create', 'UA-45376063-1', 'nbachampionshipbelt.com');
-            ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
-        <div id="container">
-            <div id="logo" class="row"></div>
-            
-            <div class="row">
-                <h1>NBA Championship Belt <?= getSeasonName($this->get('season')); ?></h1>
-                
-                <p class="seasons">
-                    <?php foreach (array_keys($availableSeasons) as $season): ?>
-                        <?php if ($season === 'all') { continue; } ?> 
-                        <?php if ($season == $this->get('season')): ?>
-                            <?= getSeasonName($season); ?>
-                        <?php else: ?>
-                            <a href="?season=<?= $season; ?>"><?= getSeasonName($season); ?></a>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </p>
-            </div>
-            
-            <div class="clear"></div>
-            
-            <div class="row">
-                <?php if ($isOngoingSeason): ?>
-                    <h2>Holder of Champ. Belt</h2>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <title>NBA Championship Belt <?= getSeasonName($this->get('season')); ?> </title>
+
+        <!-- web fonts -->
+        <!-- content font-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!-- header font -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+        <link href="/css/stylesheet.css" rel='stylesheet' type='text/css'>
+        <link href="/css/deepdata.css" rel='stylesheet' type='text/css'>
+        <link href="/css/beltholder-gradients.css" rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top header -->
+    <header id='logo-container'>
+        <img src="/img/logo.png" class='logo'>
+        <div class='current-season'><?= getSeasonName($this->get('season')); ?></div>
+        <div class='past-seasons'>
+            <?php foreach (array_keys($availableSeasons) as $season): ?>
+                <?php if ($season === 'all') { continue; } ?>
+                <?php if ($season == $this->get('season')): ?>
+                    <?= getSeasonName($season); ?>
                 <?php else: ?>
-                    <h2>Winner of Champ. Belt</h2>
+                    <a href="?season=<?= $season; ?>"><?= getSeasonName($season); ?></a>
                 <?php endif; ?>
-                <div class="title-winner">
-                    <?= getTeamSignature($beltHolder); ?>
-                </div>
-            </div>
-            
-            <?php if ($this->get('season') !== 'all'): ?>
-                <div class="row">
-                    <h2>NBA Champs</h2> 
-                    <div class="champs">
-                        <p>
-                            <?= getTeamSignature($lastYearsNBAChamp); ?>
-                            (<?= getSeasonName($this->get('season') - 1); ?>)
-                        </p>
-                        <p>
-                            <?php if ($thisYearsNBAChamp): ?>
-                                <?= getTeamSignature($thisYearsNBAChamp); ?>
-                            <?php else: ?>
-                                TBD.
-                            <?php endif; ?>
-                            (<?= getSeasonName($this->get('season')); ?>)
-                        </p>
-                    </div>
-                </div>
-            <?php endif; ?>
-            
-            <div class="row">
-                <h2>Rules</h2>
-                <ul>
-                    <?php if ($this->get('season') === 'all'): ?> 
-                        <li>It starts with the first game of the Minneapolis Lakers (which won<br>
-                            the NBA championship in 1949/50) of the 1950/51 season.</li>
-                    <?php else: ?>
-                        <li>It starts with the first game of last season's NBA champion.</li>
-                    <?php endif; ?>
-                    <li>If the belt holding team gets beat it loses the belt to the other team.</li>
-                    <li>No playoffs, the race is over after the regular season.</li>
-                </ul>
-            </div>
-            
-            <div class="row">
-                <h2>Data Sources</h2>
-                <p>
-                    Idea: <a href="http://www.reddit.com/r/nba/comments/1pn9t2/can_we_keep_track_of_the_owner_of_the/">/u/hckygod91 on reddit</a><br>
-                    Scores: <a href="http://www.basketball-reference.com/">basketball-reference.com</a><br>
-                    Logos: <a href="http://www.nba.com/">nba.com</a><br>
-                    Contribute: <a href="https://github.com/bigwhoop/nbachampionshipbelt">bigwhoop/nbachampionshipbelt</a>
-                </p>
-            </div>
-            
-            <div class="clear"></div>
-        
-            <div class="row">
-                <h2>Game Log</h2>
-                <?php if ($this->get('season') === 'all'): ?>
-                    <div style="max-width: 800px;">
-                        <?php $beltGames = $gameLog->getGames(); ?>
-                        <?php for ($i = 0, $c = count($beltGames); $i < $c; $i++): ?>
-                            <?php
-                            $firstGame = $beltGames[$i];
-                            $lastGame  = $firstGame;
-                            $newBeltHolder = $firstGame->getBeltHolderAfterGame();
-                            
-                            while (array_key_exists($i + 1, $beltGames)) {
-                                $nextBeltGame = $beltGames[$i + 1];
-                                if ($nextBeltGame->getBeltHolderAfterGame()->isSame($newBeltHolder)) {
-                                    $lastGame = $nextBeltGame;
-                                    $i++;
-                                } else {
-                                    break;
-                                }
-                            }
-                            ?>
-                            <div style="float: left; height: 22px; width: <?= $lastGame->getWinStreak() * 8; ?>px; background: url(<?= getTeamLogoURL($newBeltHolder); ?>) center;"
-                                 title="<?= $newBeltHolder->getName() . ': ' . $lastGame->getWinStreak() . ' games (' . $firstGame->getGame()->getDate()->format('Y-m-d') . ' - ' . $lastGame->getGame()->getDate()->format('Y-m-d') . ')'; ?>"></div>
-                        <?php endfor; ?>
-                    </div>
-                    <div class="clear"></div>
+            <?php endforeach; ?>
+        </div>
+    </header>
+
+    <!-- White area, with current champs and next game -->
+    <div id='content-container'>
+        <?php $team=$beltHolder->getID() ?>
+
+        <!-- Holder of current belt container -->
+        <div id='belt-holder' class='<?= $team?>'>
+            <header><i class="fa fa-trophy"></i>
+                <?php if ($isOngoingSeason): ?>
+                    HOLDER OF CHAMPION BELT
                 <?php else: ?>
-                    <table>
+                    WINNER OF CHAMPION BELT
+                <?php endif; ?>
+            </header>
+            <div class='result'>
+                <img src="/img/teams-large/<?= $team?>.png" class='team-large-logo'>
+                <footer><?= $team?></footer>
+            </div>
+        </div>
+
+        <?php if ($upcomingChampGame): ?>
+        <? $away_team = $upcomingChampGame->getAwayTeam(); ?>
+        <? $home_team = $upcomingChampGame->getHomeTeam(); ?>
+
+         <!-- Next battle of the belt -->
+        <div id='next-battle'>
+            <header><i class="fa fa-forward"></i> NEXT BATTLE FOR THE BELT </header>
+            <div class='content' style="<?= getTeamStadiumBg($upcomingChampGame->getHomeTeam()); ?>">
+                <div class='team away'>
+                    <img src=<?= getTeamLogoLargeURL($upcomingChampGame->getAwayTeam()); ?> class='team-large-logo'>
+                    <footer><?= $away_team->getName(); ?></footer>
+                </div>
+                <div class='atsign'>
+                    @
+                </div>
+                <div class='team home'>
+                    <img src=<?= getTeamLogoLargeURL($upcomingChampGame->getHomeTeam()); ?> class='team-large-logo'>
+                    <footer><?= $home_team->getName(); ?></footer>
+                </div>
+                <div class='date'>
+                    <?= $upcomingChampGame->getDate()->format('l M d, Y'); ?>
+                </div>
+            </div>
+        </div>
+
+        <?php endif; ?>
+    </div>
+
+    <!-- Bottom half of page -->
+    <div id='stats-container'>
+        <div class='container'>
+            <div id='meta-info'>
+                <!-- Rules of the belt -->
+                <div class='rules'>
+                    <header> <i class="fa fa-bolt"></i> RULES</header>
+                    <section>
+                        It starts with the first game of last season's NBA champion.<br><br>
+                        If the belt holding team gets beat it loses the belt to the other team.<br><br>
+                        No playoffs, the race is over after the regular season.
+                    </section>
+                </div>
+
+                <!-- credit! -->
+                <div class='sources'>
+                    <header><i class="fa fa-hand-o-right"></i> DATA SOURCES</header>
+                    <section>
+                        <div class='label'>Idea:</div><a href="http://www.reddit.com/r/nba/comments/1pn9t2/can_we_keep_track_of_the_owner_of_the/">/u/hckygod91 on reddit</a><br>
+                        <div class='label'>Scores: </div><a href="http://www.basketball-reference.com/">basketball-reference.com</a><br>
+                        <div class='label'>Logos: </div><a href="http://www.nba.com/">nba.com</a><br>
+                        <div class='label'>Contribute:</div><a href="https://github.com/bigwhoop/nbachampionshipbelt">bigwhoop/nbachampionshipbelt</a>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Data Tables -->
+            <div id='table-data-container'>
+                <header class='header'>
+                    <i class="fa fa-arrow-circle-o-down"></i> STATS
+                </header>
+                <!-- Link to switch -->
+                <header class='table-functions'>
+                    <div class='table-view'>
+                        <a class='selected' id="standings-link">Standings</a> <a id="game-log-link">Game Log</a>
+                    </div>
+                </header>
+
+                <!-- Table container -->
+                <div class='content'>
+                    <!-- GAME LOG -->
+                    <table id='game-log' class='hide'>
                         <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Date</th>
-                                <th>Home Team</th>
+                                <th>Matchup</th>
                                 <th>Score</th>
-                                <th>Away Team</th>
                                 <th>Winner</th>
                                 <th>Streak</th>
                                 <th>Wins</th>
@@ -283,125 +235,95 @@ function getSeasonName($season) {
                                 <tr>
                                     <td><?= $idx + 1; ?></td>
                                     <td><?= $game->getDate()->format('Y-m-d'); ?></td>
-                                    <td><?= $game->getHomeTeam()->getID(); ?></td>
+                                    <td><?= $game->getHomeTeam()->getID(); ?> @ <?= $game->getAwayTeam()->getID(); ?></td>
                                     <td><?= $game->getScore();; ?></td>
-                                    <td><?= $game->getAwayTeam()->getID(); ?></td>
                                     <td><?= getTeamLogoImgTag($newBeltHolder); ?> <?= $newBeltHolder->getID(); ?></td>
                                     <td><?= $beltGame->getWinStreak(); ?></td>
                                     <td><?= $beltGame->getAccumulatedWins(); ?></td>
                             <?php endforeach; ?>
                         </tbody>
                     </table>
-                <?php endif; ?>
-                
-                <?php if ($upcomingChampGame): ?>
-                    <div class="next-battle">
-                        <h2>Next Battle for the Belt</h2>
-                        
-                        <div class="matchup">
-                            <?= getTeamSignature($upcomingChampGame->getAwayTeam()); ?>
-                            @
-                            <?= getTeamSignature($upcomingChampGame->getHomeTeam()); ?>
-                        </div>
-                        <div class="date">
-                            <?= $upcomingChampGame->getDate()->format('l, Y-m-d'); ?>
-                        </div>
-                    </div>
-                    
-                    <div class="next-battles-after-team-win">
-                        <div class="next-battle-after-team-win next-battle-after-away-team-win">
-                            <?php if ($upcomingChampGameIfHomeTeamWins): ?>
-                                <div class="matchup">
-                                    <?= getTeamLogoImgTag($upcomingChampGameIfAwayTeamWins->getAwayTeam()); ?>
-                                    @
-                                    <?= getTeamLogoImgTag($upcomingChampGameIfAwayTeamWins->getHomeTeam()); ?>
-                                </div>
-                                <div class="date">
-                                    <?= $upcomingChampGameIfAwayTeamWins->getDate()->format('D, Y-m-d'); ?>
-                                </div>
-                            <?php else: ?>
-                                <p>No more games!</p>
-                            <?php endif; ?>
-                        </div>
-                    
-                        <div class="next-battle-after-team-win next-battle-after-home-team-win">
-                            <?php if ($upcomingChampGameIfHomeTeamWins): ?>
-                                <div class="matchup">
-                                    <?= getTeamLogoImgTag($upcomingChampGameIfHomeTeamWins->getAwayTeam()); ?>
-                                    @
-                                    <?= getTeamLogoImgTag($upcomingChampGameIfHomeTeamWins->getHomeTeam()); ?>
-                                </div>
-                                <div class="date">
-                                    <?= $upcomingChampGameIfHomeTeamWins->getDate()->format('D, Y-m-d'); ?>
-                                </div>
-                            <?php else: ?>
-                                <p>No more games!</p>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                <?php endif; ?>
-            </div>
-            
-            <div class="row">
-                <h2>Stats</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th rowspan="2">Rank</th>
-                            <th rowspan="2">Team</th>
-                            <?php if ($this->get('season') === 'all'): ?>
-                                <th rowspan="2" class="numeric"><small>Alt. Names</small></th>
-                            <?php endif; ?>
-                            <th rowspan="2" class="numeric">Games</th>
-                            <th colspan="3" class="numeric">Wins</th>
-                            <th colspan="3" class="numeric">Losses</th>
-                            <th rowspan="2">Win %</th>
-                        </tr>
-                        <tr>
-                            <th class="numeric">Total</th>
-                            <th class="numeric"><small title="As Challenger">As Chall.</small></th>
-                            <th class="numeric"><small title="As Defender">As Def.</small></th>
-                            <th class="numeric">Total</th>
-                            <th class="numeric"><small title="As Challenger">As Chall.</small></th>
-                            <th class="numeric"><small title="As Defender">As Def.</small></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php $rank = 1; $prevWinPercentage = $prevNumGames = null; ?>
-                        <?php foreach ($this->get('stats') as $teamStats): ?>
-                            <?php /** @var TeamStats $teamStats */ ?>
+
+                    <!-- STANDINGS -->
+                    <table id='standings'>
+                        <thead>
                             <tr>
-                                <td>
-                                    <?php
-                                    $numGames = $teamStats->countGames();
-                                    $winPercentage = $teamStats->calcWinPercentage();
-                                    
-                                    if ($prevWinPercentage !== $winPercentage || $prevNumGames !== $numGames) {
-                                        echo $rank . '.';
-                                        $prevNumGames = $numGames;
-                                        $prevWinPercentage = $winPercentage;
-                                    }
-                                    $rank++;
-                                    ?>
-                                </td>
-                                <td><?= getTeamSignature($teamStats->getTeam()); ?></td>
+                                <th rowspan="2">Rank</th>
+                                <th rowspan="2">Team</th>
                                 <?php if ($this->get('season') === 'all'): ?>
-                                    <td><small><?= join('<br>', $teamStats->getTeam()->getAlternativeNames()); ?></small></td>
+                                    <th rowspan="2" class="numeric"><small>Alt. Names</small></th>
                                 <?php endif; ?>
-                                <td class="numeric"><?= $numGames; ?></td>
-                                <td class="numeric"><?= $teamStats->countWins(); ?></td>
-                                <td class="numeric"><small><?= $teamStats->countWinsAsChallenger(); ?></small></td>
-                                <td class="numeric"><small><?= $teamStats->countWinsAsDefender(); ?></small></td>
-                                <td class="numeric"><?= $teamStats->countLosses(); ?></td>
-                                <td class="numeric"><small><?= $teamStats->countLossesAsChallenger(); ?></small></td>
-                                <td class="numeric"><small><?= $teamStats->countLossesAsDefender(); ?></small></td>
-                                <td><?= $winPercentage; ?>%</td>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+                                <th rowspan="2" class="numeric">Games</th>
+                                <th colspan="3" class="numeric subth">Wins</th>
+                                <th colspan="3" class="numeric subth">Losses</th>
+                                <th rowspan="2">Win %</th>
+                            </tr>
+                            <tr>
+                                <th class="numeric">Total</th>
+                                <th class="numeric"><small title="As Challenger">As Chall.</small></th>
+                                <th class="numeric"><small title="As Defender">As Def.</small></th>
+                                <th class="numeric">Total</th>
+                                <th class="numeric"><small title="As Challenger">As Chall.</small></th>
+                                <th class="numeric"><small title="As Defender">As Def.</small></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php $rank = 1; $prevWinPercentage = $prevNumGames = null; ?>
+                            <?php foreach ($this->get('stats') as $teamStats): ?>
+                                <?php /** @var TeamStats $teamStats */ ?>
+                                <tr>
+                                    <td>
+                                        <?php
+                                            $numGames = $teamStats->countGames();
+                                            $winPercentage = $teamStats->calcWinPercentage();
+
+                                            if ($prevWinPercentage !== $winPercentage || $prevNumGames !== $numGames) {
+                                                echo $rank . '.';
+                                                $prevNumGames = $numGames;
+                                                $prevWinPercentage = $winPercentage;
+                                            }
+                                            $rank++;
+                                        ?>
+                                    </td>
+                                    <td><?= getTeamSignature($teamStats->getTeam()); ?></td>
+                                    <?php if ($this->get('season') === 'all'): ?>
+                                        <td><small><?= join('<br>', $teamStats->getTeam()->getAlternativeNames()); ?></small></td>
+                                    <?php endif; ?>
+                                    <td class="numeric"><?= $numGames; ?></td>
+                                    <td class="numeric"><?= $teamStats->countWins(); ?></td>
+                                    <td class="numeric"><small><?= $teamStats->countWinsAsChallenger(); ?></small></td>
+                                    <td class="numeric"><small><?= $teamStats->countWinsAsDefender(); ?></small></td>
+                                    <td class="numeric"><?= $teamStats->countLosses(); ?></td>
+                                    <td class="numeric"><small><?= $teamStats->countLossesAsChallenger(); ?></small></td>
+                                    <td class="numeric"><small><?= $teamStats->countLossesAsDefender(); ?></small></td>
+                                    <td><?= $winPercentage; ?>%</td>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            
-            <div class="clear"></div>
         </div>
-    </body>
+    </div>
+
+    <!-- For switching between game log/standings -->
+    <script type="text/javascript">
+    (function() {
+        function _selectGameLog() {
+            document.getElementById("game-log-link").className = 'selected';
+            document.getElementById("game-log").className = '';
+            document.getElementById("standings-link").className = '';
+            document.getElementById("standings").className = 'hide';
+        }
+        function _selectStandings() {
+            document.getElementById("game-log-link").className = '';
+            document.getElementById("game-log").className = 'hide';
+
+            document.getElementById("standings-link").className = 'selected';
+            document.getElementById("standings").className = '';
+        }
+        document.getElementById("game-log-link").addEventListener("click", _selectGameLog);
+        document.getElementById("standings-link").addEventListener("click", _selectStandings);
+    })();
+    </script>
+</body>
 </html>
