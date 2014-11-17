@@ -1,0 +1,169 @@
+
+/*
+	CSS styles for bottom half of the page
+	*/
+a, a:visited {
+	color: #ADE4FF;
+	text-decoration: none;
+}
+a:hover {
+	color: #7ED2FC;
+}
+
+#stats-container {
+	width: 100%;
+	background-color: #333;
+	padding-bottom: 50px;
+	border-bottom: 12px solid #d91a47;
+	border-top: 4px solid #41589c;
+}
+
+#stats-container .fa {
+	color: #d91a47;
+}
+
+.fa {
+	margin-right: 6px;
+}
+
+#stats-container .container {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 40px;
+	min-width: 920px;
+}
+
+#meta-info {
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+}
+#table-data-container {
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#meta-info .rules {
+	background-color: #666;
+	border-radius: 4px;
+	padding: 8px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+}
+#meta-info .rules > header {
+	font-family: Oswald, Impact;
+	color: #fff;
+	padding: 4px 8px;
+}
+#meta-info .rules > section {
+	color: #ddd;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 8px 4px;
+}
+#meta-info .sources {
+	background-color: #666;
+	border-radius: 4px;
+	padding: 8px;
+	margin-top: 12px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+}
+#meta-info .sources > header {
+	font-family: Oswald, Impact;
+	color: #fff;
+	padding: 4px 8px;
+}
+#meta-info .sources > section {
+	color: #ddd;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 8px 4px;
+}
+#meta-info .sources .label {
+	display: inline-block;
+	vertical-align: text-top;
+	width: 70px;
+}
+
+#table-data-container .content {
+	height: 480px;
+	overflow: auto;
+}
+
+
+#table-data-container {
+	background-color: #fdfdfd;
+	border-radius: 4px;
+	position: relative;
+}
+#table-data-container > header.header {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background-color: #666;
+	font-family: Oswald, Impact;
+	padding: 4px 8px;
+	color: #fff;
+}
+
+#table-data-container > header.table-functions {
+	font-size: 12px;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #e2e2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eeeeee 0%,#e2e2e2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eeeeee 0%,#e2e2e2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #eeeeee 0%,#e2e2e2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+	position: relative;
+	padding: 8px 24px;
+}
+#table-data-container .search {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#table-data-container > header.table-functions .search input {
+	border: 1px solid #ccc;
+}
+
+#table-data-container table {
+	width: 100%;
+	font-family: Open Sans, Helvetica, Arial;
+	border: none;
+	border-collapse:collapse
+}
+#table-data-container thead {
+
+}
+#table-data-container thead th.subth {
+	text-align: center;
+	margin-right:3px;
+}
+#table-data-container thead th{
+	padding: 6px;
+	color: #aaa;
+	font-weight: 300;
+	border-bottom: 1px solid #eee;
+	font-size: 12px;
+	text-align: left;
+}
+#table-data-container td {
+	font-size: 12px;
+	font-weight: 300;
+	padding: 6px;
+}
+#table-data-container tr {
+	border-bottom: 1px dotted #ccc;
+}
+
+#table-data-container a {
+	color: #666;
+	margin-right: 24px;
+	cursor: pointer;
+}
+#table-data-container a.selected {
+	color: #d91a47;
+}

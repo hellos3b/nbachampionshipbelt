@@ -1,0 +1,354 @@
+/*
+
+	These are generated with http://www.colorzilla.com/gradient-editor/
+	Grab the primary color, and make the top part a little bit brighter
+	*/
+
+/* GOLDEN STAAATE! SHOUTOUT FROM hellos3b */
+#belt-holder.GSW .result {
+	background: #f9d163; /* Old browsers */
+	background: -moz-linear-gradient(top, #f9d163 0%, #fcc52d 85%, #fcc52d 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9d163), color-stop(85%,#fcc52d), color-stop(99%,#fcc52d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f9d163 0%,#fcc52d 85%,#fcc52d 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f9d163 0%,#fcc52d 85%,#fcc52d 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f9d163 0%,#fcc52d 85%,#fcc52d 99%); /* IE10+ */
+	background: linear-gradient(to bottom, #f9d163 0%,#fcc52d 85%,#fcc52d 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9d163', endColorstr='#fcc52d',GradientType=0 ); /* IE6-9 */
+}
+
+/* Lakers */
+#belt-holder.LAL .result {
+	background: #f9d266; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9d266 0%, #fcc630 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9d266), color-stop(100%,#fcc630)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9d266 0%,#fcc630 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9d266 0%,#fcc630 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9d266 0%,#fcc630 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9d266 0%,#fcc630 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9d266', endColorstr='#fcc630',GradientType=0 ); /* IE6-9 */
+}
+
+/* Phoenix */
+#belt-holder.PHX .result {
+	background: #e58152; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e58152 0%, #e65f20 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e58152), color-stop(100%,#e65f20)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e58152 0%,#e65f20 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e58152 0%,#e65f20 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e58152 0%,#e65f20 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e58152 0%,#e65f20 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e58152', endColorstr='#e65f20',GradientType=0 ); /* IE6-9 */
+}
+
+/* Hornets */
+#belt-holder.CHA .result {
+	background: #6399a3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6399a3 0%, #008da6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6399a3), color-stop(100%,#008da6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6399a3 0%,#008da6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6399a3 0%,#008da6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6399a3 0%,#008da6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #6399a3 0%,#008da6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6399a3', endColorstr='#008da6',GradientType=0 ); /* IE6-9 */
+}
+
+/* Clippers */
+#belt-holder.LAC .result {
+	background: #ce6d80; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ce6d80 0%, #cf113a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ce6d80), color-stop(100%,#cf113a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ce6d80 0%,#cf113a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ce6d80 0%,#cf113a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ce6d80 0%,#cf113a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ce6d80 0%,#cf113a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce6d80', endColorstr='#cf113a',GradientType=0 ); /* IE6-9 */
+}
+
+/* San antonio spurs */
+#belt-holder.SAS .result {
+	background: #d3d3d3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d3d3d3 0%, #c5ced4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d3d3), color-stop(100%,#c5ced4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d3d3d3 0%,#c5ced4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d3d3d3 0%,#c5ced4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d3d3d3 0%,#c5ced4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d3d3d3 0%,#c5ced4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d3', endColorstr='#c5ced4',GradientType=0 ); /* IE6-9 */
+}
+
+/* Utah jazz */
+#belt-holder.UTA .result {
+	background: #394e68; /* Old browsers */
+background: -moz-linear-gradient(top,  #394e68 0%, #0c2340 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#394e68), color-stop(100%,#0c2340)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #394e68 0%,#0c2340 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #394e68 0%,#0c2340 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #394e68 0%,#0c2340 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #394e68 0%,#0c2340 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#394e68', endColorstr='#0c2340',GradientType=0 ); /* IE6-9 */
+}
+
+/* Atlanta Hawks */
+#belt-holder.ATL .result {
+	background: #ff5e5e; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff5e5e 0%, #e0363c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff5e5e), color-stop(100%,#e0363c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff5e5e 0%,#e0363c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff5e5e 0%,#e0363c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff5e5e 0%,#e0363c 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff5e5e 0%,#e0363c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e5e', endColorstr='#e0363c',GradientType=0 ); /* IE6-9 */
+}
+
+/* Boston celtics */
+#belt-holder.BOS .result {
+	background: #00af69; /* Old browsers */
+background: -moz-linear-gradient(top,  #00af69 0%, #008751 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00af69), color-stop(100%,#008751)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #00af69 0%,#008751 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #00af69 0%,#008751 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #00af69 0%,#008751 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #00af69 0%,#008751 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00af69', endColorstr='#008751',GradientType=0 ); /* IE6-9 */
+}
+
+/* Chicago bulls */
+#belt-holder.CHI .result {
+	background: #f9134d; /* Old browsers */
+background: -moz-linear-gradient(top,  #f9134d 0%, #cc103f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9134d), color-stop(100%,#cc103f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f9134d 0%,#cc103f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f9134d 0%,#cc103f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f9134d 0%,#cc103f 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f9134d 0%,#cc103f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9134d', endColorstr='#cc103f',GradientType=0 ); /* IE6-9 */
+}
+
+/* Cleveland cavaliers */
+#belt-holder.CLE .result {
+	background: #b22339; /* Old browsers */
+background: -moz-linear-gradient(top,  #b22339 0%, #961e30 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b22339), color-stop(100%,#961e30)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b22339 0%,#961e30 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b22339 0%,#961e30 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b22339 0%,#961e30 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #b22339 0%,#961e30 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b22339', endColorstr='#961e30',GradientType=0 ); /* IE6-9 */
+}
+
+/* Denver nuggets */
+#belt-holder.DEN .result {
+	background: #009eed; /* Old browsers */
+background: -moz-linear-gradient(top,  #009eed 0%, #0080c4 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#009eed), color-stop(100%,#0080c4)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #009eed 0%,#0080c4 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #009eed 0%,#0080c4 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #009eed 0%,#0080c4 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #009eed 0%,#0080c4 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009eed', endColorstr='#0080c4',GradientType=0 ); /* IE6-9 */
+}
+
+/* detroit pistons */
+#belt-holder.DET .result {
+	background: #ff4c4c; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff4c4c 0%, #eb1749 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4c4c), color-stop(100%,#eb1749)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff4c4c 0%,#eb1749 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff4c4c 0%,#eb1749 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff4c4c 0%,#eb1749 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff4c4c 0%,#eb1749 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4c4c', endColorstr='#eb1749',GradientType=0 ); /* IE6-9 */
+}
+
+/* Indiana pacers */
+#belt-holder.IND .result {
+	background: #004c99; /* Old browsers */
+background: -moz-linear-gradient(top,  #004c99 0%, #002f61 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004c99), color-stop(100%,#002f61)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #004c99 0%,#002f61 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #004c99 0%,#002f61 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #004c99 0%,#002f61 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #004c99 0%,#002f61 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c99', endColorstr='#002f61',GradientType=0 ); /* IE6-9 */
+}
+
+/* memphis grizzlies */
+#belt-holder.MEM .result {
+	background: #72a4d8; /* Old browsers */
+background: -moz-linear-gradient(top,  #72a4d8 1%, #618ab8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#72a4d8), color-stop(100%,#618ab8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #72a4d8 1%,#618ab8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #72a4d8 1%,#618ab8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #72a4d8 1%,#618ab8 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #72a4d8 1%,#618ab8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72a4d8', endColorstr='#618ab8',GradientType=0 ); /* IE6-9 */
+}
+
+/* Miami Heat */
+#belt-holder.MIA .result {
+	background: #e5393f; /* Old browsers */
+background: -moz-linear-gradient(top,  #e5393f 1%, #bd2f36 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e5393f), color-stop(100%,#bd2f36)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e5393f 1%,#bd2f36 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e5393f 1%,#bd2f36 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e5393f 1%,#bd2f36 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e5393f 1%,#bd2f36 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5393f', endColorstr='#bd2f36',GradientType=0 ); /* IE6-9 */
+}
+
+/* Bucks */
+#belt-holder.MIL .result {background: #004c1c; /* Old browsers */
+background: -moz-linear-gradient(top,  #004c1c 1%, #003614 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#004c1c), color-stop(100%,#003614)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #004c1c 1%,#003614 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #004c1c 1%,#003614 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #004c1c 1%,#003614 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #004c1c 1%,#003614 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c1c', endColorstr='#003614',GradientType=0 ); /* IE6-9 */
+}
+
+/* Minnesota timberwolves */
+#belt-holder.MIN .result {background: #00619e; /* Old browsers */
+background: -moz-linear-gradient(top,  #00619e 1%, #005082 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#00619e), color-stop(100%,#005082)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #00619e 1%,#005082 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #00619e 1%,#005082 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #00619e 1%,#005082 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #00619e 1%,#005082 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00619e', endColorstr='#005082',GradientType=0 ); /* IE6-9 */
+}
+
+/* New Orleans pelicans */
+#belt-holder.NOP .result {background: #003d7f; /* Old browsers */
+background: -moz-linear-gradient(top,  #003d7f 0%, #002b5c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#003d7f), color-stop(100%,#002b5c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #003d7f 0%,#002b5c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #003d7f 0%,#002b5c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #003d7f 0%,#002b5c 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #003d7f 0%,#002b5c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003d7f', endColorstr='#002b5c',GradientType=0 ); /* IE6-9 */
+}
+
+/* New York knicks */
+#belt-holder.NYK .result {background: #f9b057; /* Old browsers */
+background: -moz-linear-gradient(top,  #f9b057 0%, #fa8d19 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9b057), color-stop(100%,#fa8d19)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f9b057 0%,#fa8d19 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f9b057 0%,#fa8d19 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f9b057 0%,#fa8d19 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f9b057 0%,#fa8d19 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b057', endColorstr='#fa8d19',GradientType=0 ); /* IE6-9 */
+}
+
+/* OKC thunder */
+#belt-holder.OKC .result {background: #0f92dd; /* Old browsers */
+background: -moz-linear-gradient(top,  #0f92dd 0%, #0c7fc2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0f92dd), color-stop(100%,#0c7fc2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0f92dd 0%,#0c7fc2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0f92dd 0%,#0c7fc2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0f92dd 0%,#0c7fc2 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0f92dd 0%,#0c7fc2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f92dd', endColorstr='#0c7fc2',GradientType=0 ); /* IE6-9 */
+}
+
+/* Orlando magic */
+#belt-holder.ORL .result {background: #4199d8; /* Old browsers */
+background: -moz-linear-gradient(top,  #4199d8 0%, #3a8ac7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4199d8), color-stop(100%,#3a8ac7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #4199d8 0%,#3a8ac7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #4199d8 0%,#3a8ac7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #4199d8 0%,#3a8ac7 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #4199d8 0%,#3a8ac7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4199d8', endColorstr='#3a8ac7',GradientType=0 ); /* IE6-9 */
+}
+
+/* Philadelphia 76ers */
+#belt-holder.PHI .result {background: #067fd6; /* Old browsers */
+background: -moz-linear-gradient(top,  #067fd6 0%, #056ab3 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#067fd6), color-stop(100%,#056ab3)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #067fd6 0%,#056ab3 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #067fd6 0%,#056ab3 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #067fd6 0%,#056ab3 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #067fd6 0%,#056ab3 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067fd6', endColorstr='#056ab3',GradientType=0 ); /* IE6-9 */
+}
+
+/* rip city */
+#belt-holder.POR .result {background: #ff4245; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff4245 0%, #e03a3d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4245), color-stop(100%,#e03a3d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff4245 0%,#e03a3d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff4245 0%,#e03a3d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff4245 0%,#e03a3d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff4245 0%,#e03a3d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4245', endColorstr='#e03a3d',GradientType=0 ); /* IE6-9 */
+}
+
+/* Sacramento Kings */
+#belt-holder.SAC .result {background: #4a4ac4; /* Old browsers */
+background: -moz-linear-gradient(top,  #4a4ac4 0%, #383894 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4a4ac4), color-stop(100%,#383894)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #4a4ac4 0%,#383894 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #4a4ac4 0%,#383894 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #4a4ac4 0%,#383894 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #4a4ac4 0%,#383894 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4ac4', endColorstr='#383894',GradientType=0 ); /* IE6-9 */
+}
+
+/* toronto raptors */
+#belt-holder.TOR .result {background: #e01645; /* Old browsers */
+background: -moz-linear-gradient(top,  #e01645 0%, #b8113a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e01645), color-stop(100%,#b8113a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e01645 0%,#b8113a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e01645 0%,#b8113a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e01645 0%,#b8113a 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e01645 0%,#b8113a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e01645', endColorstr='#b8113a',GradientType=0 ); /* IE6-9 */
+}
+
+/* Washington wizards */
+#belt-holder.WAS .result {background: #ea2731; /* Old browsers */
+background: -moz-linear-gradient(top,  #ea2731 0%, #d6242d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ea2731), color-stop(100%,#d6242d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ea2731 0%,#d6242d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ea2731 0%,#d6242d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ea2731 0%,#d6242d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ea2731 0%,#d6242d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea2731', endColorstr='#d6242d',GradientType=0 ); /* IE6-9 */
+}
+
+/* Brooklyn nets */
+#belt-holder.BKN .result {background: #383838; /* Old browsers */
+background: -moz-linear-gradient(top,  #383838 0%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#383838), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #383838 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #383838 0%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #383838 0%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #383838 0%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+/* Dallas Mavericks */
+#belt-holder.DAL .result {background: #0082d3; /* Old browsers */
+background: -moz-linear-gradient(top,  #0082d3 0%, #006db5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0082d3), color-stop(100%,#006db5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0082d3 0%,#006db5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0082d3 0%,#006db5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0082d3 0%,#006db5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0082d3 0%,#006db5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0082d3', endColorstr='#006db5',GradientType=0 ); /* IE6-9 */
+}
+
+/* Houston rockets */
+#belt-holder.HOU .result {background: #f21852; /* Old browsers */
+background: -moz-linear-gradient(top,  #f21852 0%, #d11346 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f21852), color-stop(100%,#d11346)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f21852 0%,#d11346 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f21852 0%,#d11346 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f21852 0%,#d11346 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f21852 0%,#d11346 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f21852', endColorstr='#d11346',GradientType=0 ); /* IE6-9 */
+}
+
+
+

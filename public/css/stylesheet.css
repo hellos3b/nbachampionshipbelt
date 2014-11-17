@@ -1,0 +1,174 @@
+/*
+	CSS styles for top half of the page
+	*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fdfdfd;
+
+	font-family: Open Sans, Helvetica, Arial;
+}
+
+.hide {
+	display: none;
+}
+
+/* Header */
+body > header#logo-container {
+	background-color: #41589c;
+	background: -moz-linear-gradient(top,  #55689b 1%, #41589c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#55689b), color-stop(100%,#41589c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #55689b 1%,#41589c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #55689b 1%,#41589c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #55689b 1%,#41589c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #55689b 1%,#41589c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55689b', endColorstr='#41589c',GradientType=0 ); /* IE6-9 */
+
+	text-align: center;
+
+	box-shadow: 0px 0px 5px #333;
+}
+body > header#logo-container img.logo {
+	margin: 24px;
+	width: 280px;
+}
+body > header#logo-container .current-season {
+	font-family: Oswald, Impact;
+	font-size:32px;
+	color: #fff;
+	padding-bottom: 7px;
+}
+body > header#logo-container a,
+body > header#logo-container a:visited {
+	color: #fff;
+}
+body > header#logo-container .past-seasons {
+	background-color: #333;
+	color: #f1f1f1;
+	font-weight: 300;
+	padding: 6px;
+}
+body > header#logo-container .past-seasons .second-year {
+	color: #d91a47;
+}
+
+
+.team-large-logo {
+	height: 90%;
+}
+
+/* Content */
+#content-container {
+	width: 80%;
+	min-width: 920px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	padding: 30px;
+	text-align: center;
+}
+
+#belt-holder {
+	width: 25%;
+	height: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+#belt-holder > header {
+	font-family: Oswald, Impact;
+	text-align: center;
+	font-size: 20px;
+	color: #313445;
+}
+#belt-holder .result {
+	border-radius: 4px;
+	margin: 6px;
+	text-align: center;
+	position: relative;
+	height: 100%;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+}
+#belt-holder .team-large-logo {
+}
+#belt-holder footer {
+	font-size: 42px;
+	position: absolute;
+	font-family: Oswald, Impact;
+	width: 100%;
+	color: #fff;
+	bottom: 0;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .8);
+}
+
+
+#next-battle {
+	width: 60%;
+	height: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+#next-battle > header {
+	font-family: Oswald, Impact;
+	text-align: left;
+	font-size: 20px;
+	color: #313445;
+}
+#next-battle .content {
+	background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+	border-radius: 4px;
+	margin: 6px;
+	text-align: center;
+	position: relative;
+	height: 100%;
+}
+
+#next-battle .team {
+	width: 40%;
+	height: 80%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	position: relative;
+}
+#next-battle .date {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #333;
+	padding: 8px 0px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+}
+#next-battle .team > footer {
+	font-size: 24px;
+	position: absolute;
+	font-family: Oswald, Impact;
+	width: 100%;
+	bottom: 0;
+	color: #fff;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .8);
+}
+#next-battle .atsign {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 20px;
+	font-family: Oswald, Impact;
+	margin-top: 50px;
+	background-color: #fff;
+	background-color: rgba(0, 0, 0, .7);
+	color: #fff;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+#next-battle .team-large-logo {
+	height: 75%;
+}
